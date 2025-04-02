@@ -1,0 +1,2 @@
+Input Text: I am doing great.
+Sentiment Analysis: positive 
