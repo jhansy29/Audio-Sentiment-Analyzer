@@ -64,13 +64,7 @@ def upload_audio():
         contents=[audio_file, prompt]
         response = model.generate_content(contents)
         print(response)
-        
-
-        # Save transcript to a .txt file
-        #transcript = "\n".join([result.alternatives[0].transcript for result in response.results])
         transcript_path = file_path + '.txt'
-        
-
         with open(transcript_path, 'w') as f:
             f.write(response.text)
 
